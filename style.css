@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Style for the background container */
 .background{
     width: 100%;
     min-height: 100vh;
@@ -12,6 +13,7 @@
     padding: 10px;
 }
 
+/* Style for the To-Do List application container */
 .todo-app{
     width: 750px;
     max-height: 540px;
@@ -21,6 +23,7 @@
     border-radius: 10px;
 }
 
+/* Style for the To-Do List heading */
 .todo-app h2{
     color: #000;
     display: flex;
@@ -28,6 +31,7 @@
     margin-bottom: 20px;
 }
 
+/* Style for the new tasks input section */
 .newTasks{
     display: flex;
     align-items: center;
@@ -38,6 +42,7 @@
     margin-bottom: 25px;
 }
 
+/* Style for the input field */
 input{
     flex: 1;
     border: none;
@@ -46,6 +51,7 @@ input{
     padding: 10px;
 }
 
+/* Style for the button */
 button{
     background: #24243e;
     color: #fff;
@@ -56,6 +62,7 @@ button{
     cursor: pointer;
 }
 
+/* Style for the list items */
 ul li{
     list-style: none;
     font-size: 17px;
@@ -65,6 +72,7 @@ ul li{
     position: relative;
 }
 
+/* Style for the unchecked state of list items */
 ul li::before{
     content: '';
     position: absolute;
@@ -78,17 +86,20 @@ ul li::before{
     left: 8px;
 }
 
+/* Style for the checked state of list items */
 ul li.checked{
     text-decoration: line-through;
     color: #bcbcbc;
 }
 
+/* Style for the checked state of list items */
 ul li.checked::before{
     background: url('/images/checked.png');
     background-size: cover;
     background-position: center;
 }
 
+/* Style for the delete button */
 ul li span{
     position: absolute;
     right: 0;
@@ -102,6 +113,7 @@ ul li span{
     border-radius: 50%;
 }
 
+/* Style for the delete button on hover */
 ul li span:hover{
     background-color: #edeef0;
 }

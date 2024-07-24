@@ -1,6 +1,7 @@
 const inputBox = document.getElementById('newTask');
 const tasksField = document.getElementById('tasksField');
 
+// Function to add a new task to the list
 function addTask() {
   const newTask = inputBox.value;
   if (newTask === '') {
@@ -18,6 +19,7 @@ function addTask() {
     saveTasks();
 }
 
+// Event listener for clicks on the tasks field
 tasksField.addEventListener('click', function(e) {
   if (e.target.tagName === 'LI') {
     e.target.classList.toggle('checked');
@@ -29,10 +31,12 @@ tasksField.addEventListener('click', function(e) {
   }
 }, false);
 
+// Function to save the tasks to local storage
 function saveTasks() {
   localStorage.setItem('data', tasksField.innerHTML);
 }
 
+// Function to load the tasks from local storage
 function loadTasks() {
   tasksField.innerHTML = localStorage.getItem('data');
 }
